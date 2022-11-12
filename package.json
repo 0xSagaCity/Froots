@@ -1,7 +1,7 @@
 {
   "name": "frooty",
   "version": "0.1.0",
-  "homepage": "https://0xSagaCity.github.io/Froots/",
+  "homepage": "https://0xsagacity.github.io/Froots/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
