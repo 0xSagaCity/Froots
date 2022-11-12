@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Froots/static/css/main.f1ce85a2.css",
+    "main.js": "/Froots/static/js/main.d85a790d.js",
+    "index.html": "/Froots/index.html",
+    "main.f1ce85a2.css.map": "/Froots/static/css/main.f1ce85a2.css.map",
+    "main.d85a790d.js.map": "/Froots/static/js/main.d85a790d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1ce85a2.css",
+    "static/js/main.d85a790d.js"
+  ]
+}
