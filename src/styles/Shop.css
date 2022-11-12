@@ -1,0 +1,272 @@
+.ShopContainer {
+  width: 100%;
+  max-width: 124rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
+}
+
+.ShopTopContainer,
+.ShopBottomContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.ShopTopContainer {
+  gap: 4rem;
+}
+
+.ShopBottomContainer {
+  padding-inline: 2rem;
+}
+
+.ShopLeftContainer {
+  max-width: 34rem;
+  padding-block: 4rem;
+  display: flex;
+  z-index: 1;
+  gap: 2rem;
+  background-color: var(--dark-color);
+  flex-shrink: 0;
+}
+
+.ShopRightContainer {
+  height: 100%;
+  flex-grow: 1;
+  padding-block: 4rem;
+  padding-inline-end: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.DetailsContainer {
+  width: 100%;
+  height: 100%;
+  max-width: 58rem;
+  font-family: var(--sans-font);
+  padding-inline-end: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.DetailsContainer > * {
+  border-collapse: collapse;
+}
+
+.DetailsBoxName {
+  min-width: 70%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--sans-font);
+  font-size: 3rem;
+  font-weight: 700;
+  border: 1px solid #444;
+  border-block-end: none;
+  line-height: 1.2;
+  padding-block: 1rem;
+  color: var(--light-color);
+  padding-inline: 2rem;
+  margin-inline-end: 10%;
+}
+
+.DetailsBoxBottomContainer {
+  display: flex;
+  width: 100%;
+  border: 1px solid #444;
+  border-block-start: none;
+  border-block-end: none;
+  border-inline-end: none;
+  color: #ddd !important;
+}
+
+.DetailsBoxFruitDetails {
+  flex-grow: 1.6;
+  max-width: 50%;
+  min-width: 16rem;
+  padding: 1rem;
+  border-block-start: 1px solid #444;
+  border-block-end: 1px solid #444;
+  border-inline-end: 1px solid #444;
+  white-space: pre-wrap;
+}
+
+.DetailsBoxFruitNutrition {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 0;
+}
+
+.NutritionValue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  height: 14rem;
+  flex-grow: 1;
+  min-width: 8rem;
+  border: 1px solid #444;
+  border-inline-start: none;
+}
+
+.NutritionHead {
+  font-family: var(--sans-font);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.NutritionValueData {
+  text-transform: lowercase;
+}
+
+.DetailsBoxUnit {
+  flex-basis: 100%;
+  border: 1px solid #444;
+  border-inline-start: none;
+  border-block-start: none;
+  padding: 1rem 1.4rem;
+}
+
+.AddToCartContainer {
+  height: 100%;
+  padding: 4rem 6rem;
+  position: relative;
+  align-self: flex-end;
+  margin-block-start: 4rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddToCartButton {
+  all: unset;
+  font-family: var(--sans-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--fruit-light-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.MobileMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 32rem;
+  background-color: var(--dark-color);
+  z-index: 999;
+  margin-block-start: 6rem;
+}
+
+/* SHOP Bottom Container */
+
+.ShopBottomContainer {
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 8rem;
+  margin-block-end: 4rem;
+}
+
+.NutritionTableTitle {
+  font-family: var(--serif-font);
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #fff;
+  padding-inline-start: 2rem;
+}
+
+.NutritionTableTitle span {
+  text-transform: lowercase;
+  color: var(--fruit-light-color);
+}
+
+.NutritionTableContainer {
+  width: 100%;
+  max-width: 72rem;
+  border-inline: 1px solid #444;
+}
+
+.NutritionTable {
+  width: 100%;
+  color: #ccc;
+  font-family: var(--sans-font);
+  border-collapse: collapse;
+  margin-inline-end: 4rem;
+  border-block: 1px solid #444;
+}
+
+.NutritionTable tr {
+  display: flex;
+}
+
+.NutritionTable tr:not(:first-child) {
+  border-block-start: 2px dashed #444;
+}
+
+.NutritionTable th {
+  height: 4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  border-block-end: 1px solid #444;
+  background-color: var(--fruit-light-color);
+  color: var(--dark-color);
+}
+
+.NutritionTable td {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.TableColumnOne,
+.TableColumnTwo {
+  font-size: 1.4rem;
+}
+
+.TableColumnOne {
+  flex-grow: 1;
+  min-width: 50%;
+  text-align: left;
+  padding-inline-start: 2rem;
+}
+
+.TableColumnTwo {
+  min-width: 24rem;
+  max-width: 32rem;
+  text-align: left;
+  border-inline-start: 1px solid #444;
+  padding-inline-start: 2rem;
+  display: flex;
+  gap: 1em;
+}
+
+.TableColumnTwoText {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.TableApproximation {
+  font-weight: 400;
+}

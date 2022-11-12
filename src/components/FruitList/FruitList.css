@@ -1,0 +1,46 @@
+.FruitNameList {
+  height: 100%;
+  font-family: var(--serif-font);
+  font-weight: 700;
+  font-size: 2.6rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+
+.FruitNameContainer {
+  overflow: hidden;
+  position: relative;
+  padding-inline-end: 2rem;
+  padding-block: 0.4rem;
+}
+
+.FruitName {
+  all: unset;
+  padding-inline-start: 2rem;
+  cursor: pointer;
+}
+
+.NotCurrentFruitName:hover,
+.NotCurrentFruitName:focus-visible {
+  color: #fff !important;
+}
+
+.FruitName:focus-visible {
+  outline: 2px dashed #fff;
+  outline-offset: 2px;
+}
+
+.FruitName:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.FruitNameBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+}

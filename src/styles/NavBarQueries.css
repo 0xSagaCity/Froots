@@ -1,0 +1,51 @@
+@media screen and (max-width: 1400px) {
+  .Logo {
+    font-size: 3rem;
+  }
+
+  .Link {
+    font-size: 1.8rem;
+    max-width: 6rem;
+  }
+
+  .MenuIcon {
+    font-size: 4rem;
+  }
+
+  .CartItemNumber {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .NavigationList {
+    padding-inline-start: 4rem;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Logo {
+    padding-inline-start: 2rem;
+  }
+
+  .NavBar {
+    gap: 1rem;
+  }
+
+  .Navigation {
+    padding-inline-end: 2rem;
+  }
+
+  .NavigationList {
+    padding-inline-start: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .NavigationList {
+    gap: 0.6rem;
+    justify-content: flex-start;
+  }
+}

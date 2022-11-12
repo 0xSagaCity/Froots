@@ -1,0 +1,128 @@
+.NavBar {
+  height: 6rem;
+  width: 100%;
+  max-width: 124rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Navigation {
+  height: 100%;
+  width: 70%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline-end: 4rem;
+}
+
+.NavigationList {
+  list-style: none;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  gap: clamp(1rem, 10vw, 2rem);
+  align-items: center;
+  justify-content: flex-end;
+  font-family: var(--sans-font);
+  font-weight: 400;
+}
+
+.NavigationList a {
+  all: unset;
+  cursor: pointer;
+}
+
+.Link a:hover .NavBarText {
+  font-weight: 700;
+  color: #fff;
+}
+
+.Link a:focus-visible {
+  outline: 2px dashed #fff;
+  outline-offset: 2px;
+}
+
+.Link a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.Link {
+  width: 100%;
+  max-width: 5rem;
+  height: 100%;
+  font-size: 1rem;
+  overflow-x: hidden;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Link a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.2rem;
+  position: relative;
+}
+
+.LinkActive > .NavUnderline {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.NavBarText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.LinkActive > .NavBarText {
+  font-weight: 700;
+}
+
+.Logo {
+  font-family: var(--sans-font);
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  padding-inline-start: 2rem;
+}
+
+.CartItemNumber {
+  position: absolute;
+  right: -30%;
+  top: 0;
+  transform: translateY(-70%);
+  font-size: 1rem;
+  font-weight: 700;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: var(--dark-color);
+}
+
+.NavCartIcon {
+  font-size: 1.2rem;
+}
+
+.MenuIcon {
+  font-family: var(--sans-font);
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  aspect-ratio: 1/1;
+}

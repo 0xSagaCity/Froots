@@ -1,0 +1,117 @@
+@media screen and (max-width: 1400px) {
+  .NutritionHead {
+    font-size: 1.6rem;
+  }
+
+  .FruitName {
+    font-size: 2.8rem;
+  }
+
+  .DetailsBoxFruitDetails,
+  .DetailsBoxUnit,
+  .NutritionValueData {
+    font-size: 1.2rem;
+  }
+
+  .ShopLeftContainer {
+    max-width: 24rem;
+  }
+
+  .ShopRightContainer {
+    padding-inline: 2rem;
+  }
+
+  .AddToCartButton {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ShopRightContainer {
+    margin-inline-start: 0;
+  }
+
+  .ShopLeftContainer {
+    display: none;
+  }
+
+  .FruitNameList {
+    font-size: 3rem;
+  }
+
+  .AddToCartContainer {
+    align-self: flex-start;
+  }
+
+  .TableColumnTwo {
+    min-width: 50%;
+  }
+
+  .NutritionTable th:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ShopRightContainer {
+    padding: 0;
+  }
+
+  .DetailsContainer {
+    padding-inline: 2rem;
+  }
+
+  .NutritionValue {
+    width: max-content;
+    height: max-content;
+    align-items: flex-start;
+  }
+
+  .NutritionValue,
+  .DetailsBoxName,
+  .DetailsBoxFruitDetails,
+  .DetailsBoxUnit {
+    padding-inline: 0;
+  }
+
+  .DetailsBoxFruitDetails {
+    max-width: 100%;
+  }
+
+  .DetailsBoxBottomContainer {
+    flex-direction: column;
+  }
+
+  .DetailsBoxFruitNutrition {
+    gap: 1.2rem;
+  }
+
+  .DetailsBoxFruitNutrition > *,
+  .DetailsContainer > *,
+  .DetailsBoxFruitDetails {
+    min-width: 0;
+    border: none;
+  }
+
+  .DetailsBoxName {
+    width: 100%;
+    margin-inline-end: 0;
+    justify-content: flex-start;
+  }
+
+  .NutritionTableTitle {
+    padding-inline-start: 1rem;
+  }
+
+  .TableColumnOne {
+    padding-inline-start: 1rem;
+  }
+
+  .TableColumnTwo {
+    padding-inline-start: 1rem;
+  }
+}

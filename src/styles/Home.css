@@ -1,0 +1,435 @@
+.HomeContainer {
+  height: 100%;
+  width: 100%;
+  max-width: 124rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.HomeTopContainer,
+.HomeCTAContainer,
+.PricingSectionContainer,
+.TestimonialSectionContainer {
+  min-height: 68rem;
+  padding-inline: 2rem;
+  display: flex;
+  gap: 4rem;
+  padding-inline-end: 4rem;
+}
+
+.HomeTopContainer {
+  min-height: 68rem;
+  position: relative;
+}
+
+.CenterContainer {
+  width: 100%;
+  height: 48rem;
+  position: relative;
+}
+
+.CenterContainerImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 43rem;
+  aspect-ratio: 1/1;
+  height: 100%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.InternalImageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.CenterImageGradient {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    #1a1a1a33 11%,
+    #1a1a1a44 26%,
+    #1a1a1a 90%
+  );
+  z-index: 2;
+  overflow: hidden;
+}
+
+.CenterImage {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: 690px;
+  width: 96%;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+  object-position: left;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.HomeTitleContainer {
+  max-width: 43.75rem;
+  font-family: var(--serif-font);
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-block-start: 6rem;
+  margin-inline-start: 10%;
+}
+
+.HomeTitleWords {
+  font-size: 4.4rem;
+  margin-inline-end: 1rem;
+}
+
+.HomeTitleUnderline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #444;
+  z-index: -1;
+}
+
+.TopSidePara {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-block-start: 6rem;
+  height: 100%;
+  width: 100%;
+  max-width: 24rem;
+  max-height: 30rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--sans-font);
+  font-size: 0.9rem;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+.ScrollElementContainer {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* CTA Section */
+
+.HomeCTAContainer {
+  position: relative;
+}
+
+.CTARightContainer {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  margin-block: auto;
+}
+
+.CTAContainerImage {
+  height: 100%;
+  max-width: 42rem;
+  max-height: 54rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.CTATextContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.CTASectionParagraphContainer {
+  max-width: 41rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: var(--sans-font);
+  color: #ddd;
+}
+
+.CTASectionButtonContainer {
+  padding: 4rem 6rem;
+  position: relative;
+  margin-inline-start: -6rem;
+  cursor: pointer;
+}
+
+.CTASectionButton {
+  all: unset;
+  font-family: var(--sans-font);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #ddd;
+}
+
+.ButtonSpiralBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Pricing Section */
+
+.PricingSectionRightContainer {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-block: auto;
+}
+
+.PricingSectionTitle {
+  font-family: var(--serif-font);
+  font-size: 4.4rem;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+}
+
+.PricingCardsContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-block-start: 2rem;
+  gap: 4rem;
+}
+
+.PriceCard {
+  height: 100%;
+  min-height: 32rem;
+  min-width: 20rem;
+  max-width: 32rem;
+  width: 100%;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  border: 1px solid #444;
+  font-family: var(--sans-font);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.PriceCard:last-child {
+  background-color: #ddd;
+  color: var(--dark-color);
+  box-shadow: 0 1rem 3rem 1rem rgba(255, 255, 255, 0.2);
+}
+
+.CardTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.CardList {
+  flex-grow: 1;
+}
+
+.CardSubscribeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline-end: -4rem;
+}
+
+.CardPriceContainer span {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.CardButtonContainer {
+  align-self: flex-start;
+  padding: 3rem 4rem;
+  position: relative;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.CardButton {
+  all: unset;
+  font-family: var(--sans-font);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #ddd;
+}
+
+.PriceCard:last-child .CardButton {
+  color: var(--dark-color);
+}
+
+/* Testimonials Section */
+
+.TestimonialSectionContainer {
+  margin-block-end: 2rem;
+}
+
+.TestimonialSectionRightContainer {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  margin-block: auto;
+}
+
+.TestimonialSectionTitle {
+  font-family: var(--serif-font);
+  font-size: 4.4rem;
+  font-style: normal;
+  color: #fff;
+}
+
+.TestimonialRightBottomContainer {
+  flex-grow: 1;
+  display: flex;
+  gap: 8rem;
+  justify-content: flex-start;
+}
+
+.TestimonialPeopleContainer {
+  height: 100%;
+  min-width: 32rem;
+  max-width: 42rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.TestimonialCard {
+  width: 100%;
+  height: 100%;
+  max-height: 8rem;
+  border: 1px solid #444;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  color: #fff;
+  transition: all 400ms ease-out;
+}
+
+.TestimonialCard:hover {
+  border: 1px solid #fff;
+}
+
+.TestimonialFullReview {
+  max-width: 52rem;
+  flex-grow: 2;
+  border: 1px solid #444;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.TestimonialCardText {
+  width: max-content;
+  font-family: var(--sans-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 0.4rem;
+}
+
+.TestimonialCardImage {
+  object-fit: contain;
+  object-position: left;
+}
+
+.TestimonialPersonName {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.TestimonialCardStars {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 8rem;
+  color: #aaa;
+  font-weight: 700;
+  font-family: var(--sans-font);
+  margin-block: auto;
+  margin-inline-end: 2rem;
+}
+
+.TestimonialCardStars span:last-child {
+  font-weight: 400;
+}
+
+.ActiveTestimonial {
+  background-color: #ddd;
+  color: var(--dark-color);
+  box-shadow: 0 0.4rem 2rem 0.4rem rgba(255, 255, 255, 0.1);
+}
+
+.ActiveTestimonial .TestimonialCardStars {
+  color: #444444;
+}
+
+.ActiveTestimonial:hover {
+  border: 1px solid #444;
+}
+
+.FullReviewTitle,
+.FullReviewDate,
+.FullReviewText {
+  font-family: var(--sans-font);
+  color: #fff;
+  max-width: 42rem;
+}
+
+.FullReviewTitle {
+  font-size: 1.8rem;
+}
+
+.FullReviewDate {
+  color: #aaa;
+}
+
+.FullReviewText {
+  margin-block-start: 2rem;
+  white-space: pre-wrap;
+}

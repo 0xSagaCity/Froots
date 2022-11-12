@@ -1,0 +1,72 @@
+@media screen and (max-width: 1400px) {
+  .CartCardsContainer ul {
+    gap: 1rem;
+  }
+
+  .StageName {
+    font-size: 1rem;
+  }
+
+  .CartCardAmount {
+    font-size: 1.4rem;
+  }
+
+  .CloseCheckoutForm {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .CartCardsContainer ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .CartCard {
+    max-width: 32rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .CartCard {
+    max-width: 100%;
+    min-height: 18rem;
+    max-height: 22rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .CheckoutContainer,
+  .CartCardsContainer {
+    margin-inline-end: 0;
+  }
+
+  .CheckoutContainer {
+    flex-direction: column-reverse;
+    margin-block-start: 2rem;
+  }
+
+  .CurrentProcessContainer,
+  .CheckoutProgressIndicator {
+    padding: 0;
+  }
+
+  .PaymentRow label:last-child,
+  .ShippingRow label:last-child {
+    max-width: 6rem;
+  }
+
+  .NoItemWarningContainer {
+    margin-inline-end: 0;
+  }
+
+  .NoItemWarning {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .CartCard {
+    min-height: 32rem;
+  }
+}

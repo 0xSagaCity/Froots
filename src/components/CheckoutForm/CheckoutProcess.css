@@ -1,0 +1,25 @@
+.CheckoutProcessContainer {
+  height: 100vh;
+  width: 100%;
+  max-width: 52rem;
+  padding: 2rem;
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.CloseCheckoutForm {
+  color: var(--dark-color);
+  font-family: var(--sans-font);
+  font-size: 2.4rem;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.CurrentProcessContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 4rem;
+}

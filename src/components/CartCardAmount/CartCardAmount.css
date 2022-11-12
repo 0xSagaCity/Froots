@@ -1,0 +1,41 @@
+.CartCardButtonContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--sans-font);
+}
+
+.CartCardButton {
+  all: unset;
+  height: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  color: var(--cart-card-accent-color);
+  cursor: pointer;
+  border: 1px solid #888;
+  transition: all 800ms ease-in-out;
+}
+
+.CartCardAmountContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.CartCardPrice {
+  font-family: var(--serif-font);
+  font-size: 3rem;
+  color: var(--cart-card-accent-color);
+  transition: all 800ms ease-in-out;
+}
+
+.CartCardAmount {
+  font-size: 1.2rem;
+  color: var(--text-dark-color);
+  transition: all 800ms ease-in-out;
+}

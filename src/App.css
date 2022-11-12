@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&family=Josefin+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* FONT */
+  --sans-font: "Josefin Sans", sans-serif;
+  --serif-font: "Yeseva One", serif;
+  --dark-color: #1a1a1a;
+  --light-color: #fff;
+  --text-light-color: #ddd;
+  --text-dark-color: #aaa;
+}
+
+.RightImageBackground {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+body {
+  background-color: var(--dark-color);
+}
+
+.App {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.OverflowContainer {
+  overflow: hidden;
+}
+
+/* Form Styles */
+input {
+  all: unset;
+  height: 2rem;
+  border: 2px solid var(--dark-color);
+  padding-inline: 0.6rem;
+  padding-block-start: 0.6rem;
+  padding-block-end: 0.2rem;
+  cursor: text;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.SubmitButton {
+  all: unset;
+  max-width: 24rem;
+  margin-block-start: 2.6rem;
+  padding-block: 1rem;
+  padding-inline: 4rem;
+  font-family: var(--sans-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.SubmitButton:hover,
+.SubmitButton:focus-visible {
+  outline: 2px dashed #444;
+  outline-offset: 2px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-family: var(--sans-font);
+  font-size: 1.2rem;
+}
+
+/* COMMON FORM STYLES */
+.ShippingForm,
+.PaymentForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.ShippingRow,
+.PaymentRow {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.ShippingRowElder,
+.PaymentRowElder {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 1400px) {
+  * {
+    font-size: 75%;
+  }
+}

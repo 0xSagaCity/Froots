@@ -1,0 +1,48 @@
+.CheckoutProgressIndicator {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-inline: 4rem;
+}
+
+.ProgressStageSummary,
+.ProgressStageShipping,
+.ProgressStagePayments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--sans-font);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-dark-color);
+}
+
+.ProgressStageNumber {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: var(--text-dark-color);
+  color: var(--light-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.CompletedStage > .ProgressStageNumber {
+  background-color: darkgreen;
+}
+
+.CompletedStage > .StageName {
+  color: darkgreen;
+}
+
+.ActiveStage > .StageName {
+  color: var(--dark-color);
+}
+
+.ActiveStage > .ProgressStageNumber {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}

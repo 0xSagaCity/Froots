@@ -1,0 +1,133 @@
+@media screen and (max-width: 1400px) {
+  .CTASectionPara,
+  .CardList,
+  .CardPriceContainer,
+  .FullReviewDate,
+  .FullReviewText,
+  .TestimonialPersonJob {
+    font-size: 1.2rem;
+  }
+
+  .TestimonialCardStars {
+    font-size: 1.4rem;
+  }
+
+  .CTASectionButton,
+  .CardButton {
+    font-size: 2rem;
+  }
+
+  .PricingCardsContainer {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .TopSidePara {
+    display: none;
+  }
+
+  .TestimonialSectionRightContainer {
+    width: max-content;
+  }
+
+  .CTARightContainer,
+  .TestimonialSectionRightContainer {
+    width: max-content;
+    margin-inline: auto;
+  }
+
+  .CTARightContainer {
+    flex-direction: column-reverse;
+  }
+
+  .PricingCardsContainer,
+  .TestimonialRightBottomContainer {
+    flex-direction: column;
+  }
+
+  .PricingCardsContainer,
+  .TestimonialRightBottomContainer,
+  .TestimonialPeopleContainer {
+    max-width: 100%;
+  }
+
+  .PriceCard {
+    max-width: 100%;
+  }
+
+  .CTAContainerImage {
+    max-height: 40rem;
+    object-position: bottom;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .HomeTopContainer,
+  .HomeCTAContainer,
+  .PricingSectionContainer,
+  .TestimonialSectionContainer {
+    padding-inline: 2rem;
+  }
+
+  .CTARightContainer,
+  .PricingSectionRightContainer,
+  .TestimonialSectionRightContainer {
+    padding-inline-start: 0;
+  }
+
+  .CTASectionButtonContainer {
+    margin-inline: 0;
+  }
+
+  .HomeTitleUnderline {
+    z-index: 999;
+  }
+
+  .HomeTitleContainer {
+    margin-inline: 0;
+  }
+
+  .CenterImageGradient {
+    top: 20%;
+  }
+
+  .CenterImage {
+    aspect-ratio: 1/1.8;
+  }
+
+  .ScrollElementCirclePulse {
+    z-index: 999;
+  }
+
+  .AnimatedLineContainer,
+  .ScrollElementContainer {
+    display: none;
+  }
+
+  .TestimonialPeopleContainer {
+    min-width: 100%;
+  }
+
+  .CenterImage {
+    top: 25%;
+    left: 0;
+    left: 1px;
+    width: calc(100% - 2px);
+  }
+
+  .CenterContainerImage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .HomeContainer {
+    font-size: 90%;
+  }
+
+  .HomeTitleContainer {
+    padding-block-start: 2rem;
+    margin-inline: 0;
+  }
+}
